@@ -21,7 +21,7 @@ services:
     user: root
     restart: always
     ports:
-      - 8000:8000
+      - 8119:8000
       
   gptr-nextjs:
     pull_policy: build
@@ -42,7 +42,7 @@ services:
       - ./outputs:/app/outputs
     restart: always
     ports:
-      - 3000:3000
+      - 9451:3000
 
   gpt-researcher-tests:
     image: gptresearcher/gpt-researcher-tests
